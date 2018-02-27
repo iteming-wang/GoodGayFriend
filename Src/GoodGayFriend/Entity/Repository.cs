@@ -14,13 +14,12 @@ namespace Entity
     /// </summary>
     public class Repository<T> : IRepository<T> where T : class 
     {
-        private readonly DbHelper _context;
+        private static DbHelper _context;
         private IDbSet<T> _entities;
 
         /// <summary>
         /// Ctor
         /// </summary>
-        /// <param name="context">Object context</param>
         public Repository()
         {
             if (_context == null)
@@ -248,15 +247,28 @@ namespace Entity
             }
         }
 
+        /// <summary>
+        /// Entities
+        /// </summary>
+        protected virtual DbHelper Context
+        {
+            get
+            {
+                if (_context == null)
+                    _context = new DbHelper();
+                return _context;
+            }
+        }
+
         public int ExecuteSql(string sqlString)
         {
-            return this._context.Database.ExecuteSqlCommand(sqlString);
+            return Context.Database.ExecuteSqlCommand(sqlString);
         }
 
         public void Dispose()
         {
-            if (this._context != null)
-                this._context.Dispose();
+            if (Context != null)
+                Context.Dispose();
         }
     }
 }

@@ -3,3 +3,11 @@
 ################################################################################
 
 /Src/GoodGayFriend/Common/bin/Debug
+/Src/GoodGayFriend/Common/obj/Debug
+/Src/GoodGayFriend/Entity/bin/Debug
+/Src/GoodGayFriend/Entity/obj/Debug
+/Src/GoodGayFriend/GGF/bin
+/Src/GoodGayFriend/GGF/obj/Debug
+/Src/GoodGayFriend/packages
+/Src/GoodGayFriend/Service/bin/Debug
+/Src/GoodGayFriend/Service/obj/Debug
