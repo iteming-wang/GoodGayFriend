@@ -1,31 +1,538 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "首页";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="fullwidthbanner-container slider-main">
+    <div class="fullwidthabnner">
+        <ul id="revolutionul" style="display:none;">
+            <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="~/Theme/Images/sliders/revolution/thumbs/thumb2.jpg">
+                <img src="~/Theme/Images/sliders/revolution/bg1.jpg" alt="">
+                <div class="caption lft slide_title slide_item_left"
+                     data-x="0"
+                     data-y="105"
+                     data-speed="400"
+                     data-start="1500"
+                     data-easing="easeOutExpo">
+                    需要网站设计 ?
+                </div>
+                <div class="caption lft slide_subtitle slide_item_left"
+                     data-x="0"
+                     data-y="180"
+                     data-speed="400"
+                     data-start="2000"
+                     data-easing="easeOutExpo">
+                    这就是你要找的!
+                </div>
+                <div class="caption lft slide_desc slide_item_left"
+                     data-x="0"
+                     data-y="220"
+                     data-speed="400"
+                     data-start="2500"
+                     data-easing="easeOutExpo">
+                    你还在等待什么<br>
+                    快来了解一下
+                </div>
+                <a class="caption lft btn green slide_btn slide_item_left" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes"
+                   data-x="0"
+                   data-y="290"
+                   data-speed="400"
+                   data-start="3000"
+                   data-easing="easeOutExpo">
+                    现在咨询!
+                </a>
+                <div class="caption lfb"
+                     data-x="640"
+                     data-y="55"
+                     data-speed="700"
+                     data-start="1000"
+                     data-easing="easeOutExpo">
+                    <img src="~/Theme/Images/sliders/revolution/man-winner.png" alt="Image 1">
+                </div>
+            </li>
+
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb="~/Theme/Images/sliders/revolution/thumbs/thumb2.jpg">
+                <img src="~/Theme/Images/sliders/revolution/bg2.jpg" alt="">
+                <div class="caption lfl slide_title slide_item_left"
+                     data-x="0"
+                     data-y="125"
+                     data-speed="400"
+                     data-start="3500"
+                     data-easing="easeOutExpo">
+                    Powerfull & Clean
+                </div>
+                <div class="caption lfl slide_subtitle slide_item_left"
+                     data-x="0"
+                     data-y="200"
+                     data-speed="400"
+                     data-start="4000"
+                     data-easing="easeOutExpo">
+                    Responsive Admin & Website Theme
+                </div>
+                <div class="caption lfl slide_desc slide_item_left"
+                     data-x="0"
+                     data-y="245"
+                     data-speed="400"
+                     data-start="4500"
+                     data-easing="easeOutExpo">
+                    Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
+                </div>
+                <div class="caption lfr slide_item_right"
+                     data-x="635"
+                     data-y="105"
+                     data-speed="1200"
+                     data-start="1500"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/mac.png" alt="Image 1">
+                </div>
+                <div class="caption lfr slide_item_right"
+                     data-x="580"
+                     data-y="245"
+                     data-speed="1200"
+                     data-start="2000"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/ipad.png" alt="Image 1">
+                </div>
+                <div class="caption lfr slide_item_right"
+                     data-x="735"
+                     data-y="290"
+                     data-speed="1200"
+                     data-start="2500"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/iphone.png" alt="Image 1">
+                </div>
+                <div class="caption lfr slide_item_right"
+                     data-x="835"
+                     data-y="230"
+                     data-speed="1200"
+                     data-start="3000"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/macbook.png" alt="Image 1">
+                </div>
+                <div class="caption lft slide_item_right"
+                     data-x="865"
+                     data-y="45"
+                     data-speed="500"
+                     data-start="5000"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/hint1-blue.png" id="rev-hint1" alt="Image 1">
+                </div>
+                <div class="caption lfb slide_item_right"
+                     data-x="355"
+                     data-y="355"
+                     data-speed="500"
+                     data-start="5500"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/hint2-blue.png" id="rev-hint2" alt="Image 1">
+                </div>
+
+            </li>
+
+            <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="~/Theme/Images/sliders/revolution/thumbs/thumb2.jpg">
+                <img src="~/Theme/Images/sliders/revolution/bg3.jpg" alt="">
+                <div class="caption lfl slide_item_left"
+                     data-x="20"
+                     data-y="95"
+                     data-speed="400"
+                     data-start="1500"
+                     data-easing="easeOutBack">
+                    <iframe src="http://player.vimeo.com/video/56974716?portrait=0" width="420" height="240" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="caption lfr slide_title"
+                     data-x="470"
+                     data-y="100"
+                     data-speed="400"
+                     data-start="2000"
+                     data-easing="easeOutExpo">
+                    Responsive Video Support
+                </div>
+                <div class="caption lfr slide_subtitle"
+                     data-x="470"
+                     data-y="170"
+                     data-speed="400"
+                     data-start="2500"
+                     data-easing="easeOutExpo">
+                    Youtube, Vimeo and others.
+                </div>
+                <div class="caption lfr slide_desc"
+                     data-x="470"
+                     data-y="220"
+                     data-speed="400"
+                     data-start="3000"
+                     data-easing="easeOutExpo">
+                    Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
+                </div>
+                <a class="caption lfr btn yellow slide_btn" href=""
+                   data-x="470"
+                   data-y="280"
+                   data-speed="400"
+                   data-start="3500"
+                   data-easing="easeOutExpo">
+                    Watch more Videos!
+                </a>
+            </li>
+
+            <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="~/Theme/Images/sliders/revolution/thumbs/thumb2.jpg">
+                <img src="~/Theme/Images/sliders/revolution/bg4.jpg" alt="">
+                <div class="caption lft slide_title"
+                     data-x="0"
+                     data-y="105"
+                     data-speed="400"
+                     data-start="1500"
+                     data-easing="easeOutExpo">
+                    What else included ?
+                </div>
+                <div class="caption lft slide_subtitle"
+                     data-x="0"
+                     data-y="180"
+                     data-speed="400"
+                     data-start="2000"
+                     data-easing="easeOutExpo">
+                    The Most Complete Admin Theme
+                </div>
+                <div class="caption lft slide_desc"
+                     data-x="0"
+                     data-y="225"
+                     data-speed="400"
+                     data-start="2500"
+                     data-easing="easeOutExpo">
+                    Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
+                </div>
+                <a class="caption lft slide_btn btn red slide_item_left" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"
+                   data-x="0"
+                   data-y="300"
+                   data-speed="400"
+                   data-start="3000"
+                   data-easing="easeOutExpo">
+                    Learn More!
+                </a>
+                <div class="caption lft start"
+                     data-x="670"
+                     data-y="55"
+                     data-speed="400"
+                     data-start="2000"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/iphone_left.png" alt="Image 2">
+                </div>
+
+                <div class="caption lft start"
+                     data-x="850"
+                     data-y="55"
+                     data-speed="400"
+                     data-start="2400"
+                     data-easing="easeOutBack">
+                    <img src="~/Theme/Images/sliders/revolution/iphone_right.png" alt="Image 3">
+                </div>
+            </li>
+        </ul>
+        <div class="tp-bannertimer tp-bottom"></div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="container">
+    <!-- 服务区 -->
+    <div class="row service-box  wow bounceInUp">
+        <div class="col-md-4 col-sm-4">
+            <div class="service-box-heading">
+                <em><i class="fa fa-location-arrow blue"></i></em>
+                <span>多用途模板</span>
+            </div>
+            <p>解决企业互联网高额营销费用企业独有关键词精准引流分享9亿微信用户红利.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 ">
+            <div class="service-box-heading">
+                <em><i class="fa fa-check red"></i></em>
+                <span>多用途模板</span>
+            </div>
+            <p>解决企业互联网高额营销费用企业独有关键词精准引流分享9亿微信用户红利.</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="service-box-heading">
+                <em><i class="fa fa-resize-small green"></i></em>
+                <span>多用途模板</span>
+            </div>
+            <p>解决企业互联网高额营销费用企业独有关键词精准引流分享9亿微信用户红利.</p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <!-- 服务区 -->
+
+    <!-- 广告区 -->
+    <div class="slide_subtitle row quote-v1 wow bounceInUp">
+        <div class="col-md-9 quote-v1-inner">
+            <span>每 一 个 案 例， 都 是 一 份 信 任</span>
+        </div>
+        <div class="col-md-3 quote-v1-inner text-right">
+            <a class="btn-transparent slide_btn" href="javasrcipt:return false;" target="_blank"><i class="fa fa-rocket margin-right-10"></i>咨询</a>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <!-- 广告区 -->
+
+    <!-- 近期作品 -->
+    <div class="row recent-work margin-bottom-40 wow bounceInUp">
+        <div class="col-md-3">
+            <h2><a href="portfolio.html">近期作品</a></h2>
+            <p>最完整的、流行的网站制作</p>
+        </div>
+        <div class="col-md-9">
+            <ul class="bxslider">
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img1.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img1.jpg" class="fancybox-button" title="Project Name #1" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img2.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img2.jpg" class="fancybox-button" title="Project Name #2" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img3.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img4.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img4.jpg" class="fancybox-button" title="Project Name #4" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img5.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img5.jpg" class="fancybox-button" title="Project Name #5" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img6.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img6.jpg" class="fancybox-button" title="Project Name #6" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img3.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+                <li>
+                    <em>
+                        <img src="~/Theme/Images/works/img4.jpg" alt="" />
+                        <a href="portfolio_item.html"><i class="fa fa-link icon-hover icon-hover-1"></i></a>
+                        <a href="~/Theme/Images/works/img4.jpg" class="fancybox-button" title="Project Name #4" data-rel="fancybox-button"><i class="fa fa-search icon-hover icon-hover-2"></i></a>
+                    </em>
+                    <a class="bxslider-block" href="#">
+                        <strong>Amazing Project</strong>
+                        <b>Agenda corp.</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+    <!-- 近期作品 -->
+
+    <!-- 标签&推荐 -->
+    <div class="row mix-block wow bounceInUp">
+        <!-- 标签 -->
+        <div class="col-md-7 tab-style-1 margin-bottom-20">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1" data-toggle="tab">多用途</a></li>
+                <li><a href="#tab-2" data-toggle="tab">记录</a></li>
+                <li><a href="#tab-3" data-toggle="tab">敏捷开发</a></li>
+                <li><a href="#tab-4" data-toggle="tab">轻便快捷</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane row fade in active" id="tab-1">
+                    <div class="col-md-3">
+                        <a href="~/Theme/Images/photos/img7.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
+                            <img class="img-responsive" src="~/Theme/Images/photos/img7.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="margin-bottom-10">多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求</p>
+                        <p><a class="more" href="#">查看更多 <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="tab-pane row fade" id="tab-2">
+                    <div class="col-md-9">
+                        <p>多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="~/Theme/Images/photos/img10.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
+                            <img class="img-responsive" src="~/Theme/Images/photos/img10.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-3">
+                    <p>多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求</p>
+                </div>
+                <div class="tab-pane fade" id="tab-4">
+                    <p>多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求</p>
+                </div>
+            </div>
+        </div>
+        <!-- 标签 -->
+        <!-- 推荐 -->
+        <div class="col-md-5 testimonials-v1">
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <span class="testimonials-slide">满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求</span>
+                        <div class="carousel-info">
+                            <img class="pull-left" src="~/Theme/Images/people/img1-small.jpg" alt="" />
+                            <div class="pull-left">
+                                <span class="testimonials-name">张三丰</span>
+                                <span class="testimonials-post">商务总监</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="testimonials-slide">满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求</span>
+                        <div class="carousel-info">
+                            <img class="pull-left" src="~/Theme/Images/people/img5-small.jpg" alt="" />
+                            <div class="pull-left">
+                                <span class="testimonials-name">张三丰</span>
+                                <span class="testimonials-post">商务总监</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="testimonials-slide">满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求多用途即买即用，多种套餐选择，满足您的不同需求</span>
+                        <div class="carousel-info">
+                            <img class="pull-left" src="~/Theme/Images/people/img2-small.jpg" alt="" />
+                            <div class="pull-left">
+                                <span class="testimonials-name">张三丰</span>
+                                <span class="testimonials-post">商务总监</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left-btn" href="#myCarousel" data-slide="prev"></a>
+                <a class="right-btn" href="#myCarousel" data-slide="next"></a>
+            </div>
+        </div>
+        <!-- 推荐 -->
+    </div>
+    <!-- 标签&推荐 -->
+
+    <!-- 开发步骤 -->
+    <div class="row no-space-steps margin-bottom-40 wow bounceInUp">
+        <div class="col-md-4 col-sm-4">
+            <div class="front-steps front-step-one">
+                <h2>目标定义</h2>
+                <p>第一步任务.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="front-steps front-step-two">
+                <h2>分析</h2>
+                <p>第二步任务.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="front-steps front-step-three">
+                <h2>实施</h2>
+                <p>第三步任务</p>
+            </div>
+        </div>
+    </div>
+    <!-- 开发步骤 -->
+
+    <!-- 广告区 -->
+    <div class="slide_subtitle row quote-v1 wow bounceInUp">
+        <div class="col-md-9 quote-v1-inner">
+            <span>您 选 择 我 们 的 理 由！</span>
+        </div>
+        <div class="col-md-3 quote-v1-inner text-right">
+            <a class="btn-transparent slide_btn" href="javasrcipt:return false;" target="_blank"><i class="fa fa-rocket margin-right-10"></i>咨询</a>
+        </div>
+    </div>
+    <!-- 广告区 -->
+
+    <!-- 理由展示 -->
+    <div class="row front-team wow bounceInUp" style="text-align: center;">
+        <ul class="list-unstyled">
+            <li class="col-md-3 space-mobile wow bounceInRight">
+                <div class="thumbnail">
+                    <img src="~/Theme/Images/works/img2.jpg" alt="">
+                    <h3>
+                        <a>先到先得</a>
+                        <small>最吊炸天的项目</small>
+                    </h3>
+                    <p>小程序不容错过不能只在风口得超越光速</p>
+                </div>
+            </li>
+            <li class="col-md-3 space-mobile">
+                <div class="thumbnail">
+                    <img src="~/Theme/Images/works/img2.jpg" alt="">
+                    <h3>
+                        <a>高标准</a>
+                        <small>最吊炸天的项目</small>
+                    </h3>
+                    <p>企业刚需必须第三方开发</p>
+                </div>
+            </li>
+            <li class="col-md-3 space-mobile">
+                <div class="thumbnail">
+                    <img src="~/Theme/Images/works/img2.jpg" alt="">
+                    <h3>
+                        <a>低门槛</a>
+                        <small>最吊炸天的项目</small>
+                    </h3>
+                    <p>小程序应用低门槛，易推广</p>
+                </div>
+            </li>
+            <li class="col-md-3 space-mobile">
+                <div class="thumbnail">
+                    <img src="~/Theme/Images/works/img2.jpg" alt="">
+                    <h3>
+                        <a>长尾效应</a>
+                        <small>最吊炸天的项目</small>
+                    </h3>
+                    <p>一次锁定客户，多次收益</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 理由展示 -->
+
+
+
 </div>
+<script src="~/Theme/Js/Index.js"></script>

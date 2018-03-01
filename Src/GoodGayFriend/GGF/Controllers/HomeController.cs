@@ -29,5 +29,13 @@ namespace GGF.Controllers
 
             return View();
         }
+        public ActionResult ProjectList()
+        {
+            ViewBag.Message = "这是项目列表.";
+
+            return View();
+        }
+
+        
     }
 }

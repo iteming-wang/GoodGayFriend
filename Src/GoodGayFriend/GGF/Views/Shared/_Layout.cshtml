@@ -5,50 +5,193 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />
-    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    <title>@ViewBag.Title - 天山软件</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
 
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Public/css")
     @Scripts.Render("~/bundles/modernizr")
-
-
+    @Scripts.Render("~/Public/plugins")
+    @Scripts.Render("~/Public/Scripts")
+    @RenderSection("scripts", required: false)
+    <!-- BEGIN 主题风格 -->
+    <link href="~/Public/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="~/Theme/Css/Shared.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/css/animate.min.css" rel="stylesheet" />
+    <script src="~/Public/scripts/wow.min.js"></script>
+    <!-- END 主题风格 -->
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- 颜色替换 -->
+    <div class="color-panel hidden-sm">
+        <div class="color-mode-icons icon-color"></div>
+        <div class="color-mode-icons icon-color-close"></div>
+        <div class="color-mode">
+            <p>风格主题</p>
+            <ul class="inline">
+                <li class="color-blue current color-default" data-style="blue"></li>
+                <li class="color-red" data-style="red"></li>
+                <li class="color-green" data-style="green"></li>
+                <li class="color-orange" data-style="orange"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 颜色替换 -->
+
+    <!-- 头部开始 -->
+    <div class="header navbar navbar-default navbar-static-top">
+        <div class="front-topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-9">
+                        <ul class="list-unstyle inline">
+                            <li><i class="fa fa-phone topbar-info-icon top-2"></i>联系我们: <span>18700876634</span></li>
+                            <li class="sep"><span>|</span></li>
+                            <li><i class="fa fa-envelope-o topbar-info-icon top-2"></i>邮箱: <span>1219674323@qq.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <!-- 响应菜单显示开关开始 -->
+                <button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <!-- 响应菜单显示开关结束 -->
+                <!-- logo -->
+                <a class="navbar-brand logo-v1" href="index.html">
+                    @*<img src="~/Theme/Images/logo_blue.png" id="logoimg" alt="">*@
+                    天山软件
+                </a>
+                <!-- logo -->
             </div>
+
+            <!-- 顶部导航菜单 -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                    <li>@Html.ActionLink("关于", "About", "Home")</li>
-                    <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
+                    <li class="dropdown active">
+                        <a href="/">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">
+                            案例展示
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Home/ProjectList">APP</a></li>
+                            <li><a href="/Home/ProjectList">PC端</a></li>
+                            <li><a href="/Home/ProjectList">移动端</a></li>
+                            <li><a href="/Home/ProjectList">微信公众号</a></li>
+                            <li><a href="/Home/ProjectList">小程序</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">
+                            产品方案
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="feature_typography.html">Typography</a></li>
+                            <li><a href="feature_buttons.html">Buttons</a></li>
+                            <li><a href="feature_forms.html">Forms</a></li>
+                            <li><a href="feature_icons.html">Icons</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">
+                            意向咨询
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio_4.html">Portfolio 4</a></li>
+                            <li><a href="portfolio_3.html">Portfolio 3</a></li>
+                            <li><a href="portfolio_2.html">Portfolio 2</a></li>
+                            <li><a href="portfolio_item.html">Portfolio Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">
+                            关于我们
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio_4.html">Portfolio 4</a></li>
+                            <li><a href="portfolio_3.html">Portfolio 3</a></li>
+                            <li><a href="portfolio_2.html">Portfolio 2</a></li>
+                            <li><a href="portfolio_item.html">Portfolio Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-search">
+                        <span class="sep"></span>
+                        <i class="fa fa-search search-btn"></i>
+
+                        <div class="search-box">
+                            <form action="#">
+                                <div class="input-group input-large">
+                                    <input class="form-control" type="text" placeholder="请您输入查询条件">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn theme-btn">查询</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
                 </ul>
+            </div>
+            <!-- 顶部导航菜单 -->
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 内容开始 -->
+    <div class="page-container">
+        @RenderBody()
+    </div>
+    <!-- 内容结束 -->
+
+    <!-- footer开始 -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <p>
+                        <span class="margin-right-10">2013 - @DateTime.Now.Year © Metronic. ALL Rights Reserved.</span>
+                        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <ul class="social-footer">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dropbox"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
-        </footer>
-    </div>
+    <!-- footer结束 -->
 
 
-
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-
-
-
+        <script src="~/Theme/Js/Shared.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                App.init();
+               //是否启用小型轮播图
+                App.initBxSlider();
+            });
+            //wow.js插件的启动项
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+                new WOW().init();
+            };
+        </script>
 
 </body>
 </html>
