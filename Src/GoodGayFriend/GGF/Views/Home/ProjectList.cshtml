@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Title = "项目列表";
+}
+
+<link href="~/Public/css/pages/portfolio.css" rel="stylesheet" type="text/css" />
+<link href="~/Public/css/custom.css" rel="stylesheet" type="text/css" />
+
+        <!-- BEGIN BREADCRUMBS -->
+<div class="row breadcrumbs margin-bottom-40">
+    <div class="container">
+        <div class="col-md-4 col-sm-4">
+            <h1>项目列表</h1>
+        </div>
+        <div class="col-md-8 col-sm-8">
+            <ul class="pull-right breadcrumb">
+                <li><a href="/">首页</a></li>
+                <li><a href="">项目列表</a></li>
+                <li class="active">微信公众号</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="container min-hight portfolio-page margin-bottom-40">
+            <div class="filter-v1">
+                <ul class="mix-filter">
+                    <li class="filter active" data-filter="all">所有</li>
+                    <li class="filter" data-filter="category_1">微信公众号</li>
+                    <li class="filter" data-filter="category_2">PC端</li>
+                    <li class="filter" data-filter="category_3">移动端</li>
+                    <li class="filter" data-filter="category_3 category_2">PC端和移动端</li>
+                </ul>
+                @*子类分类对应添加data-filter到类名*@
+                <div class="row mix-grid thumbnails">
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_1 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img1.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto odio</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img1.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_2 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img2.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img2.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_3 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img3.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img3.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_1 category_2 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img4.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img4.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_2 category_1 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img5.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img5.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_1 category_2 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img6.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img6.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_2 category_3 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img1.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img1.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_1 category_2 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img2.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img2.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_3 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img4.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img4.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;  opacity: 1;" class="col-md-4 col-sm-6 mix category_1 mix_all">
+                        <div class="mix-inner">
+                            <img class="img-responsive" src="~/Theme/Images/works/img3.jpg" alt="">
+                            <div class="mix-details">
+                                <h4>Cascusamus et iusto accusamus</h4>
+                                <a class="mix-link"><i class="fa fa-link"></i></a>
+                                <a class="mix-preview fancybox-button" href="~/Theme/Images/works/img3.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Public/plugins/jquery.mixitup.min.js"></script>
+<script src="~/Theme/Js/ProjectList.js"></script>
