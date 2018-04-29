@@ -921,7 +921,10 @@
     <Content Include="Theme\Images\works\img4.jpg" />
     <Content Include="Theme\Images\works\img5.jpg" />
     <Content Include="Theme\Images\works\img6.jpg" />
+    <Content Include="Theme\Js\app.js" />
     <Content Include="Theme\Js\Index.js" />
+    <Content Include="Theme\Js\particles.js" />
+    <Content Include="Theme\Js\particles.min.js" />
     <Content Include="Theme\Js\ProjectList.js" />
     <Content Include="Theme\Js\Shared.js" />
     <Content Include="Web.config" />
